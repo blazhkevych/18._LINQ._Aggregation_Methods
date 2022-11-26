@@ -39,7 +39,7 @@ internal class Program
         // Вывести в консоль.
         Console.WriteLine(
             "2) Вывести название и цену тех товаров, которые не относятся к категории Kitchen, цена которых превышает 1000 грн.");
-        foreach (var good in result2) Console.WriteLine(good);
+        foreach (var good in result2) Console.WriteLine(good.Title + " " + good.Price);
 
         // Вычислить среднее значение всех цен товаров.
         var result3 = goods1.Average(g => g.Price);
