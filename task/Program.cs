@@ -32,7 +32,7 @@ internal class Program
         var result1 = goods1.Where(g => g.Category == "Mobile" && g.Price > 1000);
         // Вывести в консоль.
         Console.WriteLine("1) Выбрать товары категории Mobile, цена которых превышает 1000 грн.");
-        foreach (var good in result1) Console.WriteLine(good);
+        foreach (var good in result1) Console.WriteLine(good.Title);
 
         // Вывести название и цену тех товаров, которые не относятся к категории Kitchen, цена которых превышает 1000 грн.
         var result2 = goods1.Where(g => g.Category != "Kitchen" && g.Price > 1000);
